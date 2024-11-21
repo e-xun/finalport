@@ -145,4 +145,5 @@ $(function () {
             end: "200%",
         },
     });
+    gsap.registerPlugin(ScrollTrigger);
 });

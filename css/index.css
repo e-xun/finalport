@@ -192,6 +192,94 @@
     .wave2 li:last-child span:nth-child(3) {
         animation-delay: 0.3s;
     }
+    /* 웹 코딩 구간 */
+
+    .web {
+        width: 100%;
+    }
+    .web_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+    .web_text {
+        position: relative;
+        text-align: right;
+    }
+    .web_txt1 {
+        margin-right: 20px;
+    }
+    .web_txt1 h2 {
+        font-size: 27px;
+        letter-spacing: -2px;
+    }
+    .web_txt1 h2 a {
+        color: #fff;
+        font-size: 27px;
+    }
+    .web_txt2 {
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .web_img {
+        margin-right: 2%;
+        background-color: #ccc;
+        width: 70%;
+        height: 60%;
+    }
+    .web_img img {
+        background-color: #ccc;
+        width: 100%;
+
+        display: block;
+    }
+
+    /* 두번째 코딩 구간 */
+    .web2 {
+        width: 100%;
+    }
+    .web_wrap2 {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .web_text2 {
+        position: relative;
+        text-align: left;
+    }
+    .web_txt1-2 {
+        margin-left: 20px;
+    }
+    .web_txt1-2 h2 {
+        font-size: 27px;
+        letter-spacing: -2px;
+    }
+    .web_txt1-2 h2 a {
+        color: #fff;
+        font-size: 27px;
+    }
+    .web_txt2-1 {
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .web_img2 {
+        margin-left: 2%;
+        background-color: #ccc;
+        width: 70%;
+        height: 60%;
+    }
+    .web_img2 img {
+        background-color: #222;
+        width: 100%;
+        display: block;
+    }
 
     /* 중간 스크롤 글자 */
     .cover {
@@ -333,11 +421,21 @@
     }
 
     @keyframes pulsate {
+        0% {
+            transform: translate(-50px);
+        }
         50% {
+            transform: translateY(70px);
             box-shadow: 0 0 20px #fff, 20px 0 80px #f0f, -20px 0 80px #0ff,
                 inset 0 0 50px #fff, inset -50px 0 80px #f0f,
                 inset 50px 0 80px #0ff, inset -50px 0 300px #f0f,
                 inset 50px 0 300px #0ff;
+        }
+        70% {
+            transform: translateX(20px);
+        }
+        100% {
+            transform: translate(0px);
         }
     }
 
