@@ -43,52 +43,6 @@ $(function () {
             0.6
         );
 
-    // 일러스트 왼쪽 이동
-    let list = gsap.utils.toArray(".illust .list li");
-    let listA = gsap.utils.toArray(".illust .list .a");
-    let listB = gsap.utils.toArray(".illust .list .b");
-    let listC = gsap.utils.toArray(".illust .list .c");
-
-    gsap.to(list, {
-        xPercent: -100 * (list.length - 1),
-        scrollTrigger: {
-            trigger: ".illust",
-            pin: true,
-            scrub: 2,
-            start: "center center",
-            end: "200%",
-            // markers: true,
-        },
-    });
-
-    gsap.to(listA, {
-        y: 50,
-        rotation: 20,
-        scrollTrigger: {
-            trigger: ".illust",
-            scrub: 2,
-            end: "200%",
-        },
-    });
-    gsap.to(listB, {
-        y: 50,
-        rotation: -20,
-        scrollTrigger: {
-            trigger: ".illust",
-            scrub: 2,
-            end: "200%",
-        },
-    });
-    gsap.to(listC, {
-        y: 50,
-        rotation: 20,
-        scrollTrigger: {
-            trigger: ".illust",
-            scrub: 2,
-            end: "200%",
-        },
-    });
-
     // linechange 스크롤
     const pTag1 = document.querySelector(".first-parallel");
     const pTag2 = document.querySelector(".second-parallel");
@@ -145,4 +99,50 @@ $(function () {
 
     window.addEventListener("scroll", scrollHandler);
     animate();
+
+    // 일러스트 왼쪽 이동
+    let list = gsap.utils.toArray(".illust .list li");
+    let listA = gsap.utils.toArray(".illust .list .a");
+    let listB = gsap.utils.toArray(".illust .list .b");
+    let listC = gsap.utils.toArray(".illust .list .c");
+
+    gsap.to(list, {
+        xPercent: -100 * (list.length - 1),
+        scrollTrigger: {
+            trigger: ".illust",
+            pin: true,
+            scrub: 2,
+            start: "center center",
+            end: "200%",
+            // markers: true,
+        },
+    });
+
+    gsap.to(listA, {
+        y: 50,
+        rotation: 20,
+        scrollTrigger: {
+            trigger: ".illust",
+            scrub: 2,
+            end: "200%",
+        },
+    });
+    gsap.to(listB, {
+        y: 50,
+        rotation: -20,
+        scrollTrigger: {
+            trigger: ".illust",
+            scrub: 2,
+            end: "200%",
+        },
+    });
+    gsap.to(listC, {
+        y: 50,
+        rotation: 20,
+        scrollTrigger: {
+            trigger: ".illust",
+            scrub: 2,
+            end: "200%",
+        },
+    });
 });

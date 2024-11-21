@@ -193,6 +193,36 @@
         animation-delay: 0.3s;
     }
 
+    /* 중간 스크롤 글자 */
+    .cover {
+        width: 100vw;
+        margin-bottom: 7vw;
+        display: flex;
+    }
+
+    .cover:nth-child(1) {
+        /* margin-top: 25vh; */
+        transform: rotate(-2deg);
+        background-color: #ff3796;
+    }
+
+    .cover:nth-child(2) {
+        transform: rotate(2deg);
+        background-color: #ecfe04;
+        justify-content: flex-end;
+    }
+
+    .cover:nth-child(3) {
+        transform: rotate(-2deg);
+        background-color: #5800ff;
+    }
+
+    .cover p {
+        display: flex;
+        padding: 4vh 0;
+        font-size: clamp(2vw, 8vw, 5rem);
+    }
+
     /* 일러스트  구간*/
     /* 일러스트 한글자씩 움직임 */
     .illust .textBox {
@@ -272,36 +302,6 @@
     }
     .illust .list .c {
         transform: rotate(8deg);
-    }
-
-    /* 중간 스크롤 글자 */
-    .cover {
-        width: 100vw;
-        margin-bottom: 7vw;
-        display: flex;
-    }
-
-    .cover:nth-child(1) {
-        /* margin-top: 25vh; */
-        transform: rotate(-2deg);
-        background-color: #ff3796;
-    }
-
-    .cover:nth-child(2) {
-        transform: rotate(2deg);
-        background-color: #ecfe04;
-        justify-content: flex-end;
-    }
-
-    .cover:nth-child(3) {
-        transform: rotate(-2deg);
-        background-color: #5800ff;
-    }
-
-    .cover p {
-        display: flex;
-        padding: 4vh 0;
-        font-size: clamp(2vw, 8vw, 5rem);
     }
 
     /* contact */
