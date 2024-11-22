@@ -1168,9 +1168,9 @@
 
     /* 일러스트 그림 움직임 */
 
-    .illust {
-        /* height: 100vh; */
-    }
+    /* .illust {
+        height: 100vh;
+    } */
     .illust .list {
         display: flex;
     }
