@@ -953,7 +953,9 @@
     /* 스킬색상 */
     .profile_skill ul {
         display: flex;
-        margin-left: 60px;
+        justify-content: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
         gap: 20px;
         margin-bottom: 20px;
     }
@@ -1046,6 +1048,7 @@
 
     /* 두번째 코딩 구간 */
     .web2 {
+        border-top: 1px solid #ccc;
         width: 100%;
     }
     .web_wrap2 {
@@ -1176,8 +1179,8 @@
     }
     .illust .list li {
         width: 100%;
-        /* height: 500px; */
-        /* padding: 0px 30px; */
+        height: 100%;
+        padding: 0px 10px;
         box-sizing: border-box;
         flex-shrink: 0;
     }
