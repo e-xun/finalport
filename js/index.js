@@ -43,6 +43,50 @@ $(function () {
             0.6
         );
 
+    // 이미지 스크롤
+    // 이미지 크기 조절 애니메이션
+    gsap.to(".web_img img", {
+        scale: 1,
+        scrollTrigger: {
+            trigger: ".web", // .web2 섹션이 스크롤 트리거
+            start: "top 90%", // 화면에서 트리거 시작 위치
+            end: "top 0%", // 화면에서 트리거 끝 위치
+            scrub: true, // 스크롤에 따라 부드럽게 애니메이션 실행
+        },
+    });
+
+    // 이미지 다시 확대
+    gsap.to(".web_img img", {
+        scale: 0.8,
+        scrollTrigger: {
+            trigger: ".web",
+            start: "top 0%", // 트리거 시작 위치
+            end: "top 0%", // 트리거 끝 위치
+            scrub: true, // 부드러운 애니메이션
+        },
+    });
+    // 이미지 크기 조절 애니메이션
+    gsap.to(".web_img2 img", {
+        scale: 1,
+        scrollTrigger: {
+            trigger: ".web2", // .web2 섹션이 스크롤 트리거
+            start: "top 90%", // 화면에서 트리거 시작 위치
+            end: "top 0%", // 화면에서 트리거 끝 위치
+            scrub: true, // 스크롤에 따라 부드럽게 애니메이션 실행
+        },
+    });
+
+    // 이미지 다시 확대
+    gsap.to(".web_img2 img", {
+        scale: 0.8,
+        scrollTrigger: {
+            trigger: ".web2",
+            start: "top 0%", // 트리거 시작 위치
+            end: "top 0%", // 트리거 끝 위치
+            scrub: true, // 부드러운 애니메이션
+        },
+    });
+
     // linechange 스크롤
     const pTag1 = document.querySelector(".first-parallel");
     const pTag2 = document.querySelector(".second-parallel");
