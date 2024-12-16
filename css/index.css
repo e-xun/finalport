@@ -256,7 +256,7 @@
         font-size: 27px;
         letter-spacing: -2px;
     }
-    .web_txt1 .re {
+    .web_txt1 .re_box {
         margin-top: 20px;
         border: 3px solid #fff;
         border-radius: 20px;
@@ -265,10 +265,10 @@
         line-height: 40px;
         text-align: center;
     }
-    .web_txt1 .re:hover {
+    .web_txt1 .re_box:hover {
         background-color: #fff;
     }
-    .web_txt1 .re:hover a {
+    .web_txt1 .re_box:hover a {
         color: #000;
     }
     .web_txt1 h2 a {
@@ -898,6 +898,22 @@
         font-size: 27px;
         letter-spacing: -2px;
     }
+    .web_txt1 .re_box {
+        /* margin-top: 20px; */
+        border: 3px solid #fff;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .web_txt1 .re_box:hover {
+        background-color: #fff;
+    }
+    .web_txt1 .re_box:hover a {
+        color: #000;
+    }
     .web_txt1 h2 a {
         color: #fff;
         font-size: 27px;
@@ -945,21 +961,6 @@
     .web_txt1-2 h2 {
         font-size: 27px;
         letter-spacing: -2px;
-    }
-    .web_txt1 .re {
-        margin-top: 20px;
-        border: 3px solid #fff;
-        border-radius: 20px;
-        width: 150px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-    }
-    .web_txt1 .re:hover {
-        background-color: #fff;
-    }
-    .web_txt1 .re:hover a {
-        color: #000;
     }
     .web_txt1-2 h2 a {
         color: #fff;
@@ -1490,7 +1491,7 @@
         letter-spacing: -2px;
         margin: 10px 0px;
     }
-    .web_txt1 .re {
+    .web_txt1 .re_box {
         /* margin-top: 20px; */
         border: 3px solid #fff;
         border-radius: 20px;
@@ -1500,10 +1501,10 @@
         text-align: center;
         margin: 20px auto;
     }
-    .web_txt1 .re:hover {
+    .web_txt1 .re_box:hover {
         background-color: #fff;
     }
-    .web_txt1 .re:hover a {
+    .web_txt1 .re_box:hover a {
         color: #000;
     }
     .web_txt1 h2 a {
